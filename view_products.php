@@ -46,9 +46,9 @@
 
                     <tr>
                         <td><?php echo $num ?></td>
-                        <td><img src="images/<?php echo $row['image'] ?>" alt=<?php echo $row['name'] ?>></td>
+                        <td> <img src="images/<?php echo $row['image'] ?>" alt="grgrtgtr">  </td>
+                        <td><?php echo $row['name'] ?></td>
                         <td><?php echo $row['price'] ?></td>
-                        <td>12000</td>
                         <td>
                             <a href="delete.php?delete=<?php echo $row['id'] ?>" class="delete_product_btn"
                                 onclick="return confirm ('Are you sure you want to delete this Product?') ">
