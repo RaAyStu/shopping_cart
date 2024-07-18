@@ -8,7 +8,15 @@
             <a href="shop_products.php">Shopit</a>
 
         </nav>
+        <!-- select query -->
+         <?php
+         $select_product=mysqli_query($conn, "Select * from `cart`") or die ('query failed');
+         $row_count=mysqli_num_rows($select_product);
+         
+         ?>
         <!--shopping cart icon-->
-        <a href="" class="cart"><i class="fa-solid fa-cart-shopping"><span>4</span></i></a>
-        <div id="menu-btn" class="fas fa-bars"></div>
-</header>
+        <a href="cart.php" class="cart"><i class="fa-solid 
+        fa-cart-shopping"><span><sup></sup><?php 
+        echo $row_count ?></span></i></a>
+ <!--<div id="menu-btn" class="fas fa-bars"></div>-->
+</header> 
